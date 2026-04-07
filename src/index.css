@@ -1,0 +1,140 @@
+/* =========================
+   🌐 Tailwind
+========================= */
+@import "tailwindcss";
+
+
+/* =========================
+   🎨 THEME VARIABLES
+========================= */
+
+/* 🌙 DARK MODE (default) */
+:root {
+  --color-bg: #0a0a0a;
+  --color-surface: #111827;
+  --color-card: #1f2937;
+  --color-text: #e5e7eb;
+  --color-primary: #6366f1;
+  --contrast-text-color: #0d1218;
+}
+
+/* ☀️ LIGHT MODE */
+html:not(.dark) {
+  --color-bg: #fcf6ed;
+  --color-surface: #ffffff;
+  --color-card: #f7eddf;
+  --color-text: #111827;
+  --color-primary: ;
+  --contrast-text-color: #ffffff;
+}
+
+
+/* =========================
+   🧱 BASE STYLES
+========================= */
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+
+  /* Main font stack */
+  font-family: "Ubuntu", monospace, system-ui;
+
+  /* Smooth transition between themes */
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+
+/* =========================
+   🔤 FONT UTILITIES
+========================= */
+
+/* Pixel font (for logo / highlights) */
+.font-pixel {
+  font-family: "Press Start 2P", monospace;
+  font-size: 0.7rem;
+}
+
+/* Monospace style (for headings like About) */
+.font-mono {
+  font-family: monospace;
+}
+
+/* Ubuntu (default already applied, optional class) */
+.font-ubuntu {
+  font-family: "Ubuntu", sans-serif;
+}
+
+
+/* =========================
+   🔳 DOTTED BACKGROUND
+========================= */
+
+.bg-dotted {
+  position: relative;
+}
+
+.bg-dotted::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  /* Dark mode dots */
+  background-image: radial-gradient(
+    rgba(255, 255, 255, 0.75) 1px,
+    transparent 1px
+  );
+
+  background-size: 20px 20px;
+  opacity: 0.4;
+  z-index: 0;
+}
+
+/* Light mode dots */
+html:not(.dark) .bg-dotted::before {
+  background-image: radial-gradient(
+    rgba(0, 0, 0, 0.75) 1px,
+    transparent 1px
+  );
+}
+
+/* Keep content above dots */
+.bg-dotted > * {
+  position: relative;
+  z-index: 1;
+}
+
+
+/* =========================
+   ✨ GLASS EFFECT
+========================= */
+
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+/* =========================
+   🎯 UTILITIES
+========================= */
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Better text rendering */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@keyframes underlineGrow {
+  to { width: 100%; }
+}
+
+.animate-underline {
+  animation: underlineGrow 0.8s ease forwards;
+}
