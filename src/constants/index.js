@@ -20,7 +20,7 @@ export const projects = [
     "Ensured fault tolerance and retry mechanisms for reliability"
   ],
 
-  github: "#"
+  github: "https://github.com/Sairaj182/JobInfraPluggable.git"
 },
 {
   title: "Trade Sathi",
@@ -36,7 +36,7 @@ export const projects = [
     "Focused on usability and performance for real-time interaction"
   ],
 
-  github: "#"
+  github: "https://github.com/Lakshya8600/PaperTradingHosting.git"
 },
 {
   title: "Developer Portfolio Website",
