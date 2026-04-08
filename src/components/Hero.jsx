@@ -104,7 +104,7 @@ export default function Hero() {
            hover:scale-105 transition duration-300"
           >
             <img
-              src="/profile.jpeg"
+              src="/profile-1.jpeg"
               alt="Sairaj"
               className="w-full h-full object-cover"
             />
