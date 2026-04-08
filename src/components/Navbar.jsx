@@ -47,7 +47,7 @@ export default function Navbar() {
         </h1>
 
         {/* Links */}
-        <div className="flex items-center gap-1 sm:gap-2 md:gap-8">
+        <div className="flex items-center gap-2 sm:gap-4 md:gap-8">
 
   {navLinks.map((link) => (
     <a
