@@ -54,7 +54,7 @@ export default function Navbar() {
       key={link.id}
       href={`#${link.id}`}
       className={`transition duration-200 
-        text-[13px] sm:text-xm md:text-sm lg:text-base
+        text-[11px] sm:text-xm md:text-sm lg:text-base
         whitespace-nowrap
         ${
           active === link.id
