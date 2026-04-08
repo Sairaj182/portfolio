@@ -47,14 +47,14 @@ export default function Navbar() {
         </h1>
 
         {/* Links */}
-        <div className="flex items-center gap-2 sm:gap-3 md:gap-6">
+        <div className="flex items-center gap-1 sm:gap-2 md:gap-8">
 
   {navLinks.map((link) => (
     <a
       key={link.id}
       href={`#${link.id}`}
       className={`transition duration-200 
-        text-[11px] sm:text-xm md:text-sm lg:text-base
+        text-[10px] sm:text-xs md:text-sm lg:text-base
         whitespace-nowrap
         ${
           active === link.id
@@ -69,7 +69,7 @@ export default function Navbar() {
   {/* 🌗 Theme Toggle */}
   <button
     onClick={() => setDark(!dark)}
-    className="ml-1 p-2 rounded-lg 
+    className="ml-1 p-1.5 sm:p-2 rounded-lg 
                border border-[var(--color-text)]/20
                hover:bg-[var(--color-text)]/10 
                transition flex items-center justify-center
@@ -78,7 +78,7 @@ export default function Navbar() {
     <img
       src={dark ? "/assets/sun.svg" : "/assets/darkmode.svg"}
       alt="theme toggle"
-      className="w-5 h-5 object-contain "
+      className="w-4 h-4 sm:w-5 sm:h-5 object-contain"
     />
   </button>
 
