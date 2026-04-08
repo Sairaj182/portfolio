@@ -47,38 +47,42 @@ export default function Navbar() {
         </h1>
 
         {/* Links */}
-        <div className="flex items-center gap-6">
+        <div className="flex items-center gap-2 sm:gap-3 md:gap-6">
 
-          {navLinks.map((link) => (
-            <a
-              key={link.id}
-              href={`#${link.id}`}
-              className={`transition duration-200 ${
-                active === link.id
-                  ? "text-[var(--color-primary)]"
-                  : "text-[var(--color-text)]/70 hover:text-[var(--color-text)]"
-              }`}
-            >
-              {link.title}
-            </a>
-          ))}
+  {navLinks.map((link) => (
+    <a
+      key={link.id}
+      href={`#${link.id}`}
+      className={`transition duration-200 
+        text-[10px] sm:text-xs md:text-sm lg:text-base
+        whitespace-nowrap
+        ${
+          active === link.id
+            ? "text-[var(--color-primary)]"
+            : "text-[var(--color-text)]/70 hover:text-[var(--color-text)]"
+        }`}
+    >
+      {link.title}
+    </a>
+  ))}
 
-          {/* 🌗 Theme Toggle */}
-          <button
-  onClick={() => setDark(!dark)}
-  className="ml-2 p-2 rounded-lg 
-             border border-[var(--color-text)]/20
-             hover:bg-[var(--color-text)]/10 
-             transition flex items-center justify-center"
->
-  <img
-    src={dark ? "/assets/sun.svg" : "/assets/darkmode.svg"}
-    alt="theme toggle"
-    className="w-5 h-5 object-contain"
-  />
-</button>
+  {/* 🌗 Theme Toggle */}
+  <button
+    onClick={() => setDark(!dark)}
+    className="ml-1 p-2 rounded-lg 
+               border border-[var(--color-text)]/20
+               hover:bg-[var(--color-text)]/10 
+               transition flex items-center justify-center
+               shrink-0"
+  >
+    <img
+      src={dark ? "/assets/sun.svg" : "/assets/darkmode.svg"}
+      alt="theme toggle"
+      className="w-5 h-5 object-contain "
+    />
+  </button>
 
-        </div>
+</div>
       </div>
     </nav>
   );
