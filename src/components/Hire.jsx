@@ -56,7 +56,7 @@ export default function Hire() {
 
   return (
     <section id="hire" className="py-24 px-6">
-      <div className="max-w-3xl mx-auto w-[75%]">
+      <div className="max-w-3xl mx-auto w-[85%]">
 
         {/* Heading */}
         <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center">
