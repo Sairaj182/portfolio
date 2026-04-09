@@ -36,7 +36,7 @@ export const projects = [
     "Focused on usability and performance for real-time interaction"
   ],
 
-  github: "https://github.com/Lakshya8600/PaperTradingHosting.git"
+  github: "https://github.com/Sairaj182/PaperTradingHosting.git"
 },
 {
   title: "Developer Portfolio Website",

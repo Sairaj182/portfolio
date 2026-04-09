@@ -117,14 +117,6 @@ export default function Hire() {
            focus:border-[var(--color-primary)]"
           />
 
-          {/* Optional: Budget */}
-          <input
-            type="text"
-            name="budget"
-            placeholder="Budget (optional)"
-            className="p-3 rounded-lg border border-[var(--color-text)]/20 bg-transparent outline-none placeholder:text-[var(--color-text)]/50
-           focus:border-[var(--color-primary)]"
-          />
 
           {/* Description */}
           <textarea
