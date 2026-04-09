@@ -47,21 +47,18 @@ export default function Hero() {
         {/* LEFT SIDE (TEXT) */}
         <div className="text-center md:text-left">
 
-          <h1 className="text-4xl mt-20 md:text-5xl mt-10 font-bold leading-tight">
-            Hi, I'm{" "}
-            <span className="text-[var(--color-primary)">
-              Sairaj
+          <h1 className="text-4xl mt-20 md:text-5xl font-bold leading-tight">
+            Hi, I'm Sairaj
+            <span className="block mt-6 text-lg md:text-xl text-[var(--color-text)]/70 font-normal">
+              Backend Developer building scalable systems
             </span>
           </h1>
-          <p className="mt-6 text-lg md:text-xl text-[var(--color-text)]/70">
-            Backend Developer building scalable systems
-          </p>
           <p className="mt-6 text-lg text-[var(--color-text)]/70">
-      {text}
-      <span className="animate-pulse">|</span>
-    </p>
+            {text}
+            <span className="animate-pulse">|</span>
+          </p>
 
-          <div className="mt-8 flex flex-wrap gap-4 justify-center md:justify-start">
+          <div className="mt-9 flex flex-wrap gap-4 justify-center md:justify-start">
 
             <div className="mt-10 flex flex-row justify-center md:justify-start gap-5 items-center">
            {socialLinks.map((social, i) => (
