@@ -1,18 +1,10 @@
 import { useEffect, useState } from "react";
 import { navLinks } from "../constants";
 
-export default function Navbar() {
-  const [dark, setDark] = useState(false);
+export default function Navbar({dark,setDark}) {
+  
   const [active, setActive] = useState("");
 
-  // 🌙 Theme toggle
-  useEffect(() => {
-    if (dark) {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
-  }, [dark]);
 
   // 📍 Active section tracking
   useEffect(() => {

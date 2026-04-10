@@ -79,7 +79,6 @@ export default function Hero() {
   alt={social.name}
   className="w-7 h-7 object-contain 
              block
-             opacity-80 hover:opacity-100
              transition"
 />
     </a>

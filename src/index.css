@@ -20,9 +20,14 @@
 
 /* ☀️ LIGHT MODE */
 html:not(.dark) {
-  --color-bg: #fcf6ed;
+  /* --color-bg: #fcf6ed; */
+  --color-bg: #eef5f9;
+  
   --color-surface: #ffffff;
-  --color-card: #f7eddf;
+
+  /* --color-card: #f7eddf; */
+  --color-card: #ebf3fa;
+
   --color-text: #111827;
   --color-primary: ;
   --contrast-text-color: #ffffff;
@@ -137,4 +142,21 @@ html {
 
 .animate-underline {
   animation: underlineGrow 0.8s ease forwards;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 25s linear infinite;
+}
+
+.animate-scroll:hover {
+  animation-play-state: paused;
 }

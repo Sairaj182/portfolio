@@ -20,7 +20,8 @@ export const projects = [
     "Ensured fault tolerance and retry mechanisms for reliability"
   ],
 
-  github: "https://github.com/Sairaj182/JobInfraPluggable.git"
+  github: "https://github.com/Sairaj182/JobInfraPluggable.git",
+  // deployed: ""
 },
 {
   title: "Trade Sathi",
@@ -36,10 +37,11 @@ export const projects = [
     "Focused on usability and performance for real-time interaction"
   ],
 
-  github: "https://github.com/Sairaj182/PaperTradingHosting.git"
+  github: "https://github.com/Sairaj182/PaperTradingHosting.git",
+  deployed: "https://paper-trading-hosting.vercel.app/"
 },
 {
-  title: "Developer Portfolio Website",
+  title: "Developer Portfolio",
   description:
     "Built a modern, responsive portfolio website to showcase projects, skills, and experience with a focus on performance and clean UI.",
 
@@ -52,8 +54,23 @@ export const projects = [
     "Optimized layout for responsiveness and performance"
   ],
 
-  github: "#"
-}
+  github: "https://github.com/Sairaj182/portfolio.git"
+},
+{
+  title: "PhotonicR",
+  description:"A visually refined and responsive web platform crafted to showcase creative work and digital experiences with a strong focus on clean UI and smooth interactions.",
+
+  tech: ["React","Tailwind CSS"],
+
+  details: [
+    "Designed and implemented a modern, responsive UI ensuring seamless experience across devices",
+    "Built reusable component-based architecture for scalability and maintainability",
+    "Optimized layout and rendering for smooth navigation and fast performance",
+    "Focused on clean design principles to enhance user engagement and visual appeal"
+  ],
+  github: "https://github.com/Sairaj182/PhotonicR.git",
+  deployed: "https://photonicr.vercel.app/"
+},
 ];
 
 export const experiences = [
@@ -85,14 +102,27 @@ export const experiences = [
     company: "Eve Healthcare Center",
     duration: "November'26 - February'26",
     description:
-      "Contributed to developing healthcare-related software solutions with a focus on reliability, data handling, and usability.",
+      "Built and optimized a production-grade Django healthcare platform with real-time workflows, reduced server load, and efficient service architecture.",
     details: [
       "Built and improved backend functionalities for healthcare workflows",
       "Worked with structured data and ensured secure handling of user information",
       "Focused on performance and reliability in application features",
       "Assisted in developing features for real-world healthcare use cases"
     ]
-  }
+  },
+  {
+  role: "Developer Intern",
+  company: "PhotonicR",
+  duration: "May'25 - July'25",
+  description:
+    "Developed a modern, responsive web platform focused on showcasing creative work with clean UI and smooth user experience.",
+  details: [
+    "Designed and implemented a visually engaging and responsive UI using React and Tailwind CSS",
+    "Built reusable component-based architecture for scalability and maintainability",
+    "Optimized layout and rendering for smooth navigation and performance",
+    "Focused on user-centric design principles to enhance usability and engagement"
+  ]
+}
 ];
 
 export const testimonials = [
@@ -131,4 +161,31 @@ export const socialLinks = [
     url: "https://x.com/SairajRaithatha",
     icon: "/icons/x.svg",
   },
+];
+const dark = 1;
+
+export const tech = [
+  // Languages
+  { iconlight: "/tech/cpplight.svg", icondark: "/tech/cppdark.svg" , name:"Cpp"},
+  { iconlight: "/tech/java.svg", icondark:"/tech/java.svg", name: "Java" },
+  { iconlight: "/tech/python.svg",icondark: "/tech/python.svg", name: "Python" },
+  { iconlight: "/tech/javascript.svg",icondark: "/tech/javascript.svg", name: "JavaScript" },
+
+  // Backend
+  { iconlight: "/tech/nodejslight.svg",icondark: "/tech/nodejsdark.svg", name: "Node.js" },
+
+  // Frontend
+  { iconlight: "/tech/reactjs.svg",icondark: "/tech/reactjs.svg", name: "React.js" },
+  { iconlight: "/tech/nextjslight.svg",icondark: "/tech/nextjsdark.svg", name: "Next.js" },
+  { iconlight: "/tech/tailwindlight.svg",icondark:"/tech/tailwinddark.svg", name: "TailwindCSS" },
+
+  // Database
+  { iconlight: "/tech/mysql.svg", icondark: "/tech/mysql.svg", name: "MySQL" },
+
+  // DevOps & Tools
+  { iconlight: "/icons/github.svg",icondark: "/icons/github.svg", name: "GitHub" },
+  { iconlight: "/tech/docker.svg",icondark: "/tech/docker.svg", name: "Docker" },
+  { iconlight: "/tech/awslight.svg",icondark: "/tech/awsdark.svg", name: "AWS" },
+  { iconlight: "/tech/vercellight.svg",icondark: "/tech/verceldark.svg", name: "Vercel" },
+
 ];

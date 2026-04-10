@@ -8,15 +8,26 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Hire from "./components/Hire"
 import { Toaster } from "react-hot-toast";
+import { useState, useEffect } from "react";
 
 export default function App() {
+  const [dark, setDark] = useState(false);
+
+  // 🌙 Theme toggle
+  useEffect(() => {
+    if (dark) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, [dark]);
   return (
     <>
       <Toaster position="bottom-right" />
-      <Navbar />
+      <Navbar dark={dark} setDark={setDark}/>
       <Hero />
-      <About />
-      <Experience />
+      <About dark={dark} />
+      <Experience dark={dark} />
       <Projects />
       <Testimonials />
       <Hire />

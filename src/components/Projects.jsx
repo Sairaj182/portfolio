@@ -67,9 +67,9 @@ export default function Projects() {
                 )}
 
                 {/* Live Demo (optional) */}
-                {p.live && (
+                {p.deployed && (
                   <a
-                    href={p.live}
+                    href={p.deployed}
                     target="_blank"
                     rel="noreferrer"
                     className="text-[var(--color-text)]/80 hover:underline"

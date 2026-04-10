@@ -1,4 +1,4 @@
-export default function About() {
+export default function About({dark}) {
   return (
     <section
       id="about"
@@ -18,7 +18,28 @@ I work extensively with APIs, authentication systems, and databases, aiming to c
 <br /><br />
 Alongside development, I’m actively improving my Data Structures and Algorithms skills as I prepare for SDE roles.
         </p>
+        <a
+          href="/resume.pdf"
+          className="group mt-8 inline-flex items-center gap-2
+                     px-6 py-3 rounded-xl
+                     border border-[var(--color-text)]/20
+                     text-[var(--color-text)]
+                     hover:bg-[var(--color-text)]/10
+                     hover:scale-105
+                     transition duration-200"
+        >
+          {/* Icon */}
+          <img
+            src={dark ? "/assets/vieweyedark.svg" : "/assets/vieweye.svg"}
+            alt="Download Resume"
+            className="w-5 h-5 object-contain transition group-hover:translate-y-0.5"
+          />
 
+          {/* Text */}
+          <span className="font-medium">
+            Resume
+          </span>
+        </a>
       </div>
     </section>
   );
