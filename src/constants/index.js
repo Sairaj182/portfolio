@@ -24,21 +24,19 @@ export const projects = [
   // deployed: ""
 },
 {
-  title: "Trade Sathi",
-  description:
-    "Built a platform to assist users with trading insights and financial decision-making through structured data handling and intuitive UI.",
+  title: "PhotonicR",
+  description:"A visually refined and responsive web platform crafted to showcase creative work and digital experiences with a strong focus on clean UI and smooth interactions.",
 
-  tech: ["React", "Flask", "MySQL"],
+  tech: ["React","Tailwind CSS"],
 
   details: [
-    "Designed full-stack architecture with React frontend and Flask backend",
-    "Implemented user authentication and secure data handling",
-    "Managed structured financial data using relational databases",
-    "Focused on usability and performance for real-time interaction"
+    "Designed and implemented a modern, responsive UI ensuring seamless experience across devices",
+    "Built reusable component-based architecture for scalability and maintainability",
+    "Optimized layout and rendering for smooth navigation and fast performance",
+    "Focused on clean design principles to enhance user engagement and visual appeal"
   ],
-
-  github: "https://github.com/Sairaj182/PaperTradingHosting.git",
-  deployed: "https://paper-trading-hosting.vercel.app/"
+  github: "https://github.com/Sairaj182/PhotonicR.git",
+  deployed: "https://photonicr.vercel.app/"
 },
 {
   title: "Developer Portfolio",
@@ -57,19 +55,21 @@ export const projects = [
   github: "https://github.com/Sairaj182/portfolio.git"
 },
 {
-  title: "PhotonicR",
-  description:"A visually refined and responsive web platform crafted to showcase creative work and digital experiences with a strong focus on clean UI and smooth interactions.",
+  title: "Trade Sathi",
+  description:
+    "Built a platform to assist users with trading insights and financial decision-making through structured data handling and intuitive UI.",
 
-  tech: ["React","Tailwind CSS"],
+  tech: ["React", "Flask", "MySQL"],
 
   details: [
-    "Designed and implemented a modern, responsive UI ensuring seamless experience across devices",
-    "Built reusable component-based architecture for scalability and maintainability",
-    "Optimized layout and rendering for smooth navigation and fast performance",
-    "Focused on clean design principles to enhance user engagement and visual appeal"
+    "Designed full-stack architecture with React frontend and Flask backend",
+    "Implemented user authentication and secure data handling",
+    "Managed structured financial data using relational databases",
+    "Focused on usability and performance for real-time interaction"
   ],
-  github: "https://github.com/Sairaj182/PhotonicR.git",
-  deployed: "https://photonicr.vercel.app/"
+
+  github: "https://github.com/Sairaj182/PaperTradingHosting.git",
+  deployed: "https://paper-trading-hosting.vercel.app/"
 },
 ];
 
