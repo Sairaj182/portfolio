@@ -20,7 +20,7 @@ const counter = new Counter({
 
   
 export default function App() {
-  const [dark, setDark] = useState(false);
+  const [dark, setDark] = useState(true);
   const [visits, setVisits] = useState(null);
   const [displayCount, setDisplayCount] = useState(0);
   const [showPlus, setShowPlus] = useState(false);
