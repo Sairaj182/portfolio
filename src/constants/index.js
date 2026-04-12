@@ -127,16 +127,16 @@ export const experiences = [
 
 export const testimonials = [
   {
-    name: "Rahul Sharma",
-    role: "Frontend Developer",
-    image: "https://i.pravatar.cc/100?img=1",
-    feedback: "Sairaj is a great backend developer. His API design is clean and scalable.",
+    name: "Ravi Utsav",
+    role: "Managing Director at EVE Healthcare",
+    image: "/assets/EVEHealthcare.jpeg",
+    feedback: "Built and optimized backend workflows on healthcare datasets, turning raw data into meaningful insights while consistently demonstrating ownership, precision and strong problem-solving skills while internship at EVE Healthcare as a Backend Developer.",
   },
   {
-    name: "Ankit Verma",
-    role: "Software Engineer",
-    image: "https://i.pravatar.cc/100?img=2",
-    feedback: "Very reliable and strong in problem solving.",
+    name: "Dr. Subrata Das (NITP)",
+    role: "Director PhotonicR Pvt. Ltd.",
+    image: "/assets/photonicr.jpeg",
+    feedback: "Sairaj's performance was found to be satisfactory and commendable in web development and product design processes while his internship as developer-intern at PhotonicR Pvt. Ltd.",
   },
 ];
 
