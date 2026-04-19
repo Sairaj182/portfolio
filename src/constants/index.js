@@ -132,12 +132,6 @@ export const testimonials = [
     image: "/assets/EVEHealthcare.jpeg",
     feedback: "Built and optimized backend workflows on healthcare datasets, turning raw data into meaningful insights while consistently demonstrating ownership, precision and strong problem-solving skills while internship at EVE Healthcare as a Backend Developer.",
   },
-  {
-    name: "Dr. Subrata Das (NITP)",
-    role: "Director PhotonicR Pvt. Ltd.",
-    image: "/assets/photonicr.jpeg",
-    feedback: "Sairaj's performance was found to be satisfactory and commendable in web development and product design processes while his internship as developer-intern at PhotonicR Pvt. Ltd.",
-  },
 ];
 
 export const socialLinks = [
